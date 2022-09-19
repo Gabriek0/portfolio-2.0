@@ -1,4 +1,4 @@
-// # SECTIONS
+// SECTIONS
 
 // Banner
 export const BannerImage = () => (
