@@ -5,16 +5,20 @@ import ButtonComponent from "./components/Button";
 
 import { FiLinkedin } from "react-icons/fi";
 import Banner from "./components/Banner";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   const { onOpen, isOpen, onClose } = useSidebarDrawer();
 
   return (
-    <Box h="100vh" w="100vw" bgColor="background.50">
+    <Box h="100%" w="100%" bgColor="background.50">
       <Flex w={["100%", null, "100%", "1120px"]} mx="auto" flexDir="column">
         <Header />
       </Flex>
       <Banner />
+      <Flex w={["100%", null, "100%", "1120px"]} mx="auto" flexDir="column">
+        <AboutMe />
+      </Flex>
     </Box>
   );
 }
