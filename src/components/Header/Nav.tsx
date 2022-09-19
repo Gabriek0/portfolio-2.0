@@ -20,7 +20,7 @@ function Nav() {
         <HStack spacing={16}>
           <Link>Home</Link>
           <Link>Sobre mim</Link>
-          <Link>Eperiência</Link>
+          <Link>Experiência</Link>
           <Link>Projetos</Link>
         </HStack>
       ) : (
