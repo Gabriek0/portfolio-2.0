@@ -8,7 +8,7 @@ function AboutMe() {
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <Flex my={[12, 32]} gap={32}>
+    <Flex my={[12, 32]} gap={32} justify="space-between">
       {isLargerThan1024 && (
         <Flex>
           <Image

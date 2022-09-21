@@ -7,6 +7,7 @@ import { FiLinkedin } from "react-icons/fi";
 import Banner from "./components/Banner";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
+import Projects from "./components/Project";
 
 function App() {
   const { onOpen, isOpen, onClose } = useSidebarDrawer();
@@ -24,6 +25,9 @@ function App() {
         <Flex w={["100%", null, "100%", "1120px"]} mx="auto" flexDir="column">
           <Experience />
         </Flex>
+      </Flex>
+      <Flex w={["100%", null, "100%", "1120px"]} mx="auto" flexDir="column">
+        <Projects />
       </Flex>
     </Box>
   );

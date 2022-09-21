@@ -2,7 +2,7 @@ import { Flex, Tab, TabPanel, TabPanels, Tabs, Text } from "@chakra-ui/react";
 
 function ExperienceDesktop() {
   return (
-    <Tabs variant="unstyled" display="flex" gap={28}>
+    <Tabs display="flex" width="100%" variant="unstyled" gap={36}>
       <Flex flexDir="column">
         <Text mb={8} fontSize="2xl" fontWeight="600" color="white">
           EXPERIÊNCIA
