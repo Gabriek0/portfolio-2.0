@@ -6,6 +6,7 @@ import ButtonComponent from "./components/Button";
 import { FiLinkedin } from "react-icons/fi";
 import Banner from "./components/Banner";
 import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 
 function App() {
   const { onOpen, isOpen, onClose } = useSidebarDrawer();
@@ -18,6 +19,11 @@ function App() {
       <Banner />
       <Flex w={["100%", null, "100%", "1120px"]} mx="auto" flexDir="column">
         <AboutMe />
+      </Flex>
+      <Flex bgColor="background.100">
+        <Flex w={["100%", null, "100%", "1120px"]} mx="auto" flexDir="column">
+          <Experience />
+        </Flex>
       </Flex>
     </Box>
   );

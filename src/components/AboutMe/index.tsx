@@ -19,13 +19,12 @@ function AboutMe() {
         </Flex>
       )}
       <Flex
-        w={["100%", "100%", "100%", "500px"]}
         flexDir="column"
+        w={["100%", "100%", "100%", "500px"]}
         gap={4}
-        py={12}
         px={[8, 8, 24, 24, 0]}
       >
-        <Text mb={4} color="white" fontWeight="bold" fontSize={["2xl", "lg"]}>
+        <Text mb={4} color="white" fontWeight="bold" fontSize={["2xl", "xl"]}>
           SOBRE MIM
         </Text>
 
