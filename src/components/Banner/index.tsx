@@ -29,8 +29,18 @@ function Banner() {
         </Text>
 
         <Flex mt={12} gap={4}>
-          <ButtonComponent text="LinkedIn" icon={FiLinkedin} color="blue" />
-          <ButtonComponent text="Github" icon={FiGithub} color="pink" />
+          <ButtonComponent
+            linkTo="https://www.linkedin.com/in/gabriel-henrique-664bb219a/"
+            text="LinkedIn"
+            icon={FiLinkedin}
+            color="blue"
+          />
+          <ButtonComponent
+            linkTo="https://github.com/Gabriek0"
+            text="Github"
+            icon={FiGithub}
+            color="pink"
+          />
         </Flex>
       </Flex>
 

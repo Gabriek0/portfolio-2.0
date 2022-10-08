@@ -6,7 +6,9 @@ import {
   Link,
   useMediaQuery,
 } from "@chakra-ui/react";
+
 import { RiMenuLine } from "react-icons/ri";
+
 import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
 
 function Nav() {
@@ -24,13 +26,15 @@ function Nav() {
           <Link>Projetos</Link>
         </HStack>
       ) : (
-        <IconButton
-          aria-label="Open navigation" // Accessibility
-          variant="unstyled"
-          onClick={onOpen}
-          fontSize={24}
-          icon={<Icon as={RiMenuLine} />}
-        />
+        <>
+          <IconButton
+            aria-label="Open navigation" // Accessibility
+            variant="unstyled"
+            fontSize={24}
+            onClick={onOpen}
+            icon={<Icon as={RiMenuLine} />}
+          />
+        </>
       )}
     </Flex>
   );

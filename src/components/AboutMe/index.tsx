@@ -44,7 +44,12 @@ function AboutMe() {
             text="Currículo"
             color="pink"
           />
-          <ButtonComponent icon={AiOutlineMail} text="E-mail" color="blue" />
+          <ButtonComponent
+            linkTo="mailto:gabriel.sanches170@gmail.com"
+            icon={AiOutlineMail}
+            text="E-mail"
+            color="blue"
+          />
         </Flex>
       </Flex>
     </Flex>

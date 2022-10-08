@@ -5,10 +5,9 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
+  Link,
   Text,
 } from "@chakra-ui/react";
-
-import Nav from "../Header/Nav";
 
 import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
 
@@ -17,17 +16,23 @@ function SidebarDrawer() {
 
   return (
     <Drawer isOpen={isOpen} onClose={onClose} placement="right">
-      <DrawerOverlay>
-        <DrawerOverlay>
-          <DrawerContent p={4} bgColor="gray.200">
-            <DrawerCloseButton mt={6} />
-            <DrawerHeader>Navegação</DrawerHeader>
-            <DrawerBody>
-              <Text>Teste</Text>
-            </DrawerBody>
-          </DrawerContent>
-        </DrawerOverlay>
-      </DrawerOverlay>
+      <DrawerOverlay />
+      <DrawerContent p={4} bgColor="gray.200">
+        <DrawerCloseButton mt={6} color="white" />
+        <DrawerHeader color="white">Navegação</DrawerHeader>
+        <DrawerBody
+          color="white"
+          display="flex"
+          flexDir="column"
+          gap={4}
+          mt={6}
+        >
+          <Link>Home</Link>
+          <Link>Sobre mim</Link>
+          <Link>Experiência</Link>
+          <Link>Projetos</Link>
+        </DrawerBody>
+      </DrawerContent>
     </Drawer>
   );
 }
