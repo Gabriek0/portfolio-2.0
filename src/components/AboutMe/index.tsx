@@ -1,19 +1,20 @@
 // Chakra UI
-import { Flex, HStack, Image, Text, useMediaQuery } from "@chakra-ui/react";
+import {
+  Flex,
+  HStack,
+  Icon,
+  Image,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 
 // Components
 import ButtonComponent from "../Button";
+import IconSection from "../Icons";
 
 // React Icons
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
-
-import { SiJavascript } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { AiFillHtml5 } from "react-icons/ai";
-import { SiCss3 } from "react-icons/si";
-import { DiReact } from "react-icons/di";
-import { TbBrandNextjs } from "react-icons/tb";
 
 function AboutMe() {
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
@@ -49,14 +50,7 @@ function AboutMe() {
           commodo dolor, nec bibendum velit.
         </Text>
 
-        <HStack spacing={4} cursor="pointer">
-          <SiJavascript color="#00D2DF" size={28} />
-          <SiTypescript color="#00D2DF" size={28} />
-          <AiFillHtml5 color="#00D2DF" size={28} />
-          <SiCss3 color="#00D2DF" size={28} />
-          <DiReact color="#00D2DF" size={28} />
-          <TbBrandNextjs color="#00D2DF" size={28} />
-        </HStack>
+        <IconSection />
 
         <Flex mt={12} gap={4}>
           <ButtonComponent
