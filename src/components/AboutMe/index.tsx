@@ -1,14 +1,25 @@
-import { Flex, Image, Text, useMediaQuery } from "@chakra-ui/react";
+// Chakra UI
+import { Flex, HStack, Image, Text, useMediaQuery } from "@chakra-ui/react";
+
+// Components
 import ButtonComponent from "../Button";
 
+// React Icons
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
+
+import { SiJavascript } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { AiFillHtml5 } from "react-icons/ai";
+import { SiCss3 } from "react-icons/si";
+import { DiReact } from "react-icons/di";
+import { TbBrandNextjs } from "react-icons/tb";
 
 function AboutMe() {
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <Flex my={[12, 32]} gap={32} justify="space-between">
+    <Flex my={[12, 28]} gap={28} justify="space-between">
       {isLargerThan1024 && (
         <Flex>
           <Image
@@ -37,6 +48,15 @@ function AboutMe() {
           egestas dui. Nullam finibus aliquam enim quis faucibus. Aenean ac
           commodo dolor, nec bibendum velit.
         </Text>
+
+        <HStack spacing={4} cursor="pointer">
+          <SiJavascript color="#00D2DF" size={28} />
+          <SiTypescript color="#00D2DF" size={28} />
+          <AiFillHtml5 color="#00D2DF" size={28} />
+          <SiCss3 color="#00D2DF" size={28} />
+          <DiReact color="#00D2DF" size={28} />
+          <TbBrandNextjs color="#00D2DF" size={28} />
+        </HStack>
 
         <Flex mt={12} gap={4}>
           <ButtonComponent
