@@ -1,5 +1,4 @@
-import { Container, Flex, Text, useBreakpointValue } from "@chakra-ui/react";
-import SidebarDrawer from "../SidebarDrawer";
+import { Flex, Text } from "@chakra-ui/react";
 import Nav from "./Nav";
 
 function Header() {

@@ -10,6 +10,7 @@ function Banner() {
 
   return (
     <Flex
+      id="home"
       position="relative"
       justifyContent="center"
       py={[24, 24, 24, 32]}

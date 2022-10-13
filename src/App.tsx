@@ -19,15 +19,25 @@ function App() {
           <Header />
         </Flex>
         <Banner />
-        <Flex w={["100%", null, "100%", "1120px"]} mx="auto" flexDir="column">
+        <Flex
+          id="about-me"
+          w={["100%", null, "100%", "1120px"]}
+          mx="auto"
+          flexDir="column"
+        >
           <AboutMe />
         </Flex>
-        <Flex bgColor="background.100">
+        <Flex id="exp" bgColor="background.100">
           <Flex w={["100%", null, "100%", "1120px"]} mx="auto" flexDir="column">
             <Experience />
           </Flex>
         </Flex>
-        <Flex w={["100%", null, "100%", "1120px"]} mx="auto" flexDir="column">
+        <Flex
+          id="projects"
+          w={["100%", null, "100%", "1120px"]}
+          mx="auto"
+          flexDir="column"
+        >
           <Projects />
         </Flex>
       </Box>

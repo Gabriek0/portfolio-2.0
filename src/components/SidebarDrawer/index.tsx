@@ -5,11 +5,11 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
-  Link,
-  Text,
 } from "@chakra-ui/react";
 
 import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
+
+import { Link } from "react-scroll";
 
 function SidebarDrawer() {
   const { isOpen, onClose } = useSidebarDrawer();
@@ -27,10 +27,18 @@ function SidebarDrawer() {
           gap={4}
           mt={6}
         >
-          <Link>Home</Link>
-          <Link>Sobre mim</Link>
-          <Link>Experiência</Link>
-          <Link>Projetos</Link>
+          <Link to="home" smooth={true}>
+            Home
+          </Link>
+          <Link to="about-me" smooth={true}>
+            Sobre mim
+          </Link>
+          <Link to="exp" smooth={true}>
+            Experiência
+          </Link>
+          <Link to="projects" smooth={true}>
+            Projetos
+          </Link>
         </DrawerBody>
       </DrawerContent>
     </Drawer>

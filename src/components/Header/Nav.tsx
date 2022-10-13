@@ -3,13 +3,14 @@ import {
   HStack,
   Icon,
   IconButton,
-  Link,
   useMediaQuery,
 } from "@chakra-ui/react";
 
 import { RiMenuLine } from "react-icons/ri";
 
 import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
+
+import { Link } from "react-scroll";
 
 function Nav() {
   const { onOpen } = useSidebarDrawer();
@@ -20,10 +21,18 @@ function Nav() {
     <Flex color="gray.100">
       {isLargerThan1024 ? (
         <HStack spacing={16}>
-          <Link>Home</Link>
-          <Link>Sobre mim</Link>
-          <Link>Experiência</Link>
-          <Link>Projetos</Link>
+          <Link to="home" smooth={true}>
+            Home
+          </Link>
+          <Link to="about-me" smooth={true}>
+            Sobre mim
+          </Link>
+          <Link to="exp" smooth={true}>
+            Experiência
+          </Link>
+          <Link to="projects" smooth={true}>
+            Projetos
+          </Link>
         </HStack>
       ) : (
         <>
