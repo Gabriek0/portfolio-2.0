@@ -29,9 +29,18 @@ function Project({ props }: ProjectProps) {
   return (
     <Flex flexDir="column" w={["100%", "50%"]} gap={[4]} px={4} py={6}>
       <Box>
-        <Image h="200px" w="100%" src={props.imageUrl} alt={props.title} />
+        <Image
+          h="200px"
+          w="100%"
+          cursor="pointer"
+          objectFit="cover"
+          alt={props.title}
+          src={props.imageUrl}
+        />
       </Box>
-      <Text color="white">{props.title}</Text>
+      <Text color="white" fontWeight="600" fontSize={["lg", "2xl"]}>
+        {props.title}
+      </Text>
       <Text color="gray.100">{props.description}</Text>
       <Menu>
         <MenuButton as={Text} cursor="pointer" color="blue.100">

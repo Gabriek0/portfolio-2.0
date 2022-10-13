@@ -1,12 +1,5 @@
 // Chakra UI
-import {
-  Flex,
-  HStack,
-  Icon,
-  Image,
-  Text,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import { Flex, Image, Text, useMediaQuery } from "@chakra-ui/react";
 
 // Components
 import ButtonComponent from "../Button";
@@ -16,6 +9,9 @@ import IconSection from "../Icons";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 
+// Images
+import Photo from "../../assets/me.png";
+
 function AboutMe() {
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
 
@@ -23,11 +19,7 @@ function AboutMe() {
     <Flex my={[12, 28]} gap={28} justify="space-between">
       {isLargerThan1024 && (
         <Flex>
-          <Image
-            h="367px"
-            w="367px"
-            src="https://avatars.githubusercontent.com/u/89749843?v=4"
-          />
+          <Image h="367px" w="367px" src={Photo} />
         </Flex>
       )}
       <Flex

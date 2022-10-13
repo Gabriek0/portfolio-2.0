@@ -16,15 +16,13 @@ export const projects: Projects[] = [
       "Vite",
       "Axios",
     ],
-    imageUrl:
-      "https://github.com/Gabriek0/nlw-esports-frontend/raw/main/web/public/nlw-frontend.gif",
+    imageUrl: "https://i.ibb.co/xGXxmhL/nlw-esports.png",
   },
   {
     id: uuid(),
     title: "Upfi",
     description: "Um projeto para listar e adicionar imagens",
-    imageUrl:
-      "https://github.com/Gabriek0/upfi/raw/main/public/upfi-desktop.gif",
+    imageUrl: "https://i.ibb.co/0XP1L8N/upfi.png",
     link: "https://github.com/Gabriek0/upfi",
     technologies: [
       "Javascript",
@@ -41,8 +39,7 @@ export const projects: Projects[] = [
     id: uuid(),
     title: "Dashgo",
     description: "Dashboard interativa utilizando Chakra UI",
-    imageUrl:
-      "https://github.com/Gabriek0/dashgo/raw/main/public/dashgo-desktop.gif",
+    imageUrl: "https://i.ibb.co/CMySwTX/dashgo.png",
     link: "https://github.com/Gabriek0/dashgo",
     technologies: [
       "ChakraUI",
@@ -61,8 +58,7 @@ export const projects: Projects[] = [
     title: "World-trip",
     description: "Uma plataforma de viagens online construído com Chakra UI",
     link: "https://github.com/Gabriek0/world-trip",
-    imageUrl:
-      "https://github.com/Gabriek0/world-trip/raw/main/public/world-trip.gif",
+    imageUrl: "https://i.ibb.co/BwxgW9t/world-trip.png",
     technologies: [
       "Axios",
       "ChakraUI",
