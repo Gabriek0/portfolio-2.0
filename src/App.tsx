@@ -9,6 +9,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 
 import SidebarDrawer from "./components/SidebarDrawer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         >
           <Projects />
         </Flex>
+        <Footer />
       </Box>
     </>
   );
