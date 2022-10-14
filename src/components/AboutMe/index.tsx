@@ -24,6 +24,9 @@ function AboutMe() {
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition="ease 1s"
+          viewport={{
+            once: true,
+          }}
         >
           <Image h="367px" w="367px" src={Photo} />
         </Flex>
@@ -37,6 +40,9 @@ function AboutMe() {
         initial={{ x: -50, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition="ease 1s"
+        viewport={{
+          once: true,
+        }}
       >
         <Text mb={4} color="white" fontWeight="bold" fontSize={["2xl", "xl"]}>
           SOBRE MIM

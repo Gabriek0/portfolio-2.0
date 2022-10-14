@@ -8,9 +8,7 @@ import {
   TabPanels,
   Tabs,
   Text,
-  useDisclosure,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 
 function ExperienceDesktop() {
   return (
