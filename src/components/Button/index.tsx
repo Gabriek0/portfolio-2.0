@@ -8,6 +8,7 @@ interface ButtonProps {
   color: "pink" | "blue";
   customWidth?: boolean;
   linkTo?: string;
+  download?: boolean;
 }
 
 function ButtonComponent({
@@ -16,10 +17,11 @@ function ButtonComponent({
   icon,
   customWidth,
   linkTo,
+  download,
 }: ButtonProps) {
   return (
     <Box w={[customWidth ? "100%" : 36, 40]} borderRadius={8} overflow="hidden">
-      <Link href={linkTo} isExternal>
+      <Link href={linkTo} isExternal download={download}>
         <Button
           h="100%"
           w="100%"

@@ -49,6 +49,8 @@ function AboutMe() {
             icon={AiOutlineCloudDownload}
             text="Currículo"
             color="pink"
+            linkTo="/public/Curriculo.pdf"
+            download
           />
           <ButtonComponent
             linkTo="mailto:gabriel.sanches170@gmail.com"
