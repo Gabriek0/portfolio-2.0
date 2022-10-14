@@ -36,10 +36,18 @@ function AboutMe() {
           São Paulo, Brasil
         </Text>
 
-        <Text color="gray.100" fontWeight="500" fontSize={18} lineHeight={8}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
-          egestas dui. Nullam finibus aliquam enim quis faucibus. Aenean ac
-          commodo dolor, nec bibendum velit.
+        <Text
+          color="gray.100"
+          fontWeight="500"
+          fontSize={18}
+          lineHeight={8}
+          textAlign="justify"
+        >
+          Sou apaixonado por tecnologia e pelo impacto que ela pode ter na vida
+          das pessoas. Dessa forma, possuo foco em Desenvolvimento Front-end, e
+          tenho o objetivo de desenvolver projetos que visam resolver problemas
+          do mundo real. Sou uma pessoa extremamente focada e autodidata sempre
+          aberta a aprender mais e compartilhar meus conhecimentos.
         </Text>
 
         <IconSection />
