@@ -59,6 +59,7 @@ function IconSection() {
       initial={{ y: 25, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition="ease 1s"
+      viewport={{ once: true }}
     >
       {icons.map((icon) => (
         <IconComponent icon={icon} />

@@ -11,6 +11,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 // Images
 import Photo from "../../assets/me.png";
+import { motion } from "framer-motion";
 
 function AboutMe() {
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
@@ -18,7 +19,12 @@ function AboutMe() {
   return (
     <Flex my={[12, 28]} gap={28} justify="space-between">
       {isLargerThan1024 && (
-        <Flex>
+        <Flex
+          as={motion.div}
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition="ease 1s"
+        >
           <Image h="367px" w="367px" src={Photo} />
         </Flex>
       )}
@@ -27,6 +33,10 @@ function AboutMe() {
         w={["100%", "100%", "100%", "500px"]}
         gap={4}
         px={[8, 8, 24, 24, 0]}
+        as={motion.div}
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition="ease 1s"
       >
         <Text mb={4} color="white" fontWeight="bold" fontSize={["2xl", "xl"]}>
           SOBRE MIM
