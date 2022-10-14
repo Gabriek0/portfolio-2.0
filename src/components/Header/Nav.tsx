@@ -1,8 +1,10 @@
 import {
+  Button,
   Flex,
   HStack,
   Icon,
   IconButton,
+  Text,
   useMediaQuery,
 } from "@chakra-ui/react";
 
@@ -22,16 +24,44 @@ function Nav() {
       {isLargerThan1024 ? (
         <HStack spacing={16}>
           <Link to="home" smooth={true}>
-            Home
+            <Text
+              cursor="pointer"
+              _hover={{
+                textDecoration: "underline",
+              }}
+            >
+              Home
+            </Text>
           </Link>
           <Link to="about-me" smooth={true}>
-            Sobre mim
+            <Text
+              cursor="pointer"
+              _hover={{
+                textDecoration: "underline",
+              }}
+            >
+              Sobre mim
+            </Text>
           </Link>
           <Link to="exp" smooth={true}>
-            Experiência
+            <Text
+              cursor="pointer"
+              _hover={{
+                textDecoration: "underline",
+              }}
+            >
+              Experiência
+            </Text>
           </Link>
           <Link to="projects" smooth={true}>
-            Projetos
+            <Text
+              cursor="pointer"
+              _hover={{
+                textDecoration: "underline",
+              }}
+            >
+              Projetos
+            </Text>
           </Link>
         </HStack>
       ) : (
