@@ -7,16 +7,14 @@ import { BannerImage } from "../../icons";
 
 import Typewriter from "typewriter-effect";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+import { useTranslation } from "react-i18next";
 
 function Banner() {
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
 
-  const [isFirstTextShow, setIsFirstTextShow] = useState(false);
-
-  useEffect(() => {
-    console.log(isFirstTextShow);
-  }, [isFirstTextShow]);
+  const { t } = useTranslation();
 
   return (
     <Flex
@@ -30,18 +28,7 @@ function Banner() {
     >
       <Flex w="1120px" flexDirection="column" height="fit-content">
         <Text color="white" fontWeight="600" fontSize={["lg", "2xl"]}>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("OLÁ EU SOU O ")
-                .callFunction(() => {
-                  setTimeout(() => {
-                    setIsFirstTextShow(true);
-                  }, 1000);
-                })
-                .start();
-            }}
-          />
+          {t("banner.hi")}
         </Text>
         <Text
           h={[12, 24]}
@@ -49,16 +36,14 @@ function Banner() {
           fontWeight="600"
           fontSize={["3xl", "6xl"]}
         >
-          {isFirstTextShow && (
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter.typeString("GABRIEL").start();
-              }}
-            />
-          )}
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString("GABRIEL").start();
+            }}
+          />
         </Text>
         <Text color="white" fontWeight="600" fontSize={["lg", "2xl"]}>
-          DESENVOLVEDOR FRONT-END
+          {t("banner.developer")}
         </Text>
 
         <Flex mt={12} gap={4}>

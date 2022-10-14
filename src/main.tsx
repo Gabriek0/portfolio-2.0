@@ -5,6 +5,8 @@ import App from "./App";
 import { SidebarDrawerProvider } from "./contexts/SidebarDrawerContext";
 import { theme } from "./styles/theme";
 
+import "./i18n";
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <SidebarDrawerProvider>

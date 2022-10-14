@@ -13,7 +13,11 @@ import { AiOutlineMail } from "react-icons/ai";
 import Photo from "../../assets/me.png";
 import { motion } from "framer-motion";
 
+import { useTranslation } from "react-i18next";
+
 function AboutMe() {
+  const { t } = useTranslation();
+
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
 
   return (
@@ -45,11 +49,11 @@ function AboutMe() {
         }}
       >
         <Text mb={4} color="white" fontWeight="bold" fontSize={["2xl", "xl"]}>
-          SOBRE MIM
+          {t("aboutMe.title")}
         </Text>
 
         <Text fontWeight="500" fontSize="xl" color="white">
-          São Paulo, Brasil
+          {t("aboutMe.location")}
         </Text>
 
         <Text
@@ -59,11 +63,7 @@ function AboutMe() {
           lineHeight={8}
           textAlign="justify"
         >
-          Sou apaixonado por tecnologia e pelo impacto que ela pode ter na vida
-          das pessoas. Dessa forma, possuo foco em Desenvolvimento Front-end, e
-          tenho o objetivo de desenvolver projetos que visam resolver problemas
-          do mundo real. Sou uma pessoa extremamente focada e autodidata sempre
-          aberta a aprender mais e compartilhar meus conhecimentos.
+          {t("aboutMe.text")}
         </Text>
 
         <IconSection />
@@ -71,7 +71,7 @@ function AboutMe() {
         <Flex mt={12} gap={4}>
           <ButtonComponent
             icon={AiOutlineCloudDownload}
-            text="Currículo"
+            text={t("aboutMe.buttonCv")}
             color="pink"
             linkTo="/public/Curriculo.pdf"
             download

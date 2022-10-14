@@ -23,11 +23,15 @@ import { Projects } from "../../types/Projects";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+import { useTranslation } from "react-i18next";
+
 interface ProjectProps {
   props: Projects;
 }
 
 function Project({ props }: ProjectProps) {
+  const { t } = useTranslation();
+
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
@@ -77,7 +81,7 @@ function Project({ props }: ProjectProps) {
           <Text color="gray.100">{props.description}</Text>
           <Menu>
             <MenuButton as={Text} cursor="pointer" color="blue.100">
-              Tecnologias usadas no projeto
+              {t("projects.buttonTechnologies")}
               <ChevronDownIcon />
             </MenuButton>
             <MenuList bgColor="background.100">
@@ -99,7 +103,7 @@ function Project({ props }: ProjectProps) {
           <ButtonComponent
             customWidth
             icon={FiPaperclip}
-            text="Visualizar"
+            text={t("projects.buttonView")}
             color="blue"
             linkTo={props.link}
           />

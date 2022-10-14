@@ -11,16 +11,23 @@ import {
 import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
 
 import { Link } from "react-scroll";
+import { LanguageSwitcher } from "../LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 function SidebarDrawer() {
   const { isOpen, onClose } = useSidebarDrawer();
+
+  const { t } = useTranslation();
 
   return (
     <Drawer isOpen={isOpen} onClose={onClose} placement="right">
       <DrawerOverlay />
       <DrawerContent p={4} bgColor="gray.200">
         <DrawerCloseButton mt={6} color="white" />
-        <DrawerHeader color="white">Navegação</DrawerHeader>
+        <DrawerHeader color="white">
+          Navegação
+          <LanguageSwitcher />
+        </DrawerHeader>
         <DrawerBody
           color="white"
           display="flex"
@@ -35,7 +42,7 @@ function SidebarDrawer() {
                 textDecoration: "underline",
               }}
             >
-              Home
+              {t("header.home")}
             </Text>
           </Link>
           <Link to="about-me" smooth={true}>
@@ -45,7 +52,7 @@ function SidebarDrawer() {
                 textDecoration: "underline",
               }}
             >
-              Sobre mim
+              {t("header.aboutMe")}
             </Text>
           </Link>
           <Link to="exp" smooth={true}>
@@ -55,7 +62,7 @@ function SidebarDrawer() {
                 textDecoration: "underline",
               }}
             >
-              Experiência
+              {t("header.experience")}
             </Text>
           </Link>
           <Link to="projects" smooth={true}>
@@ -65,7 +72,7 @@ function SidebarDrawer() {
                 textDecoration: "underline",
               }}
             >
-              Projetos
+              {t("header.projects")}
             </Text>
           </Link>
         </DrawerBody>

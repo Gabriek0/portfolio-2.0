@@ -14,10 +14,16 @@ import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
 
 import { Link } from "react-scroll";
 
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "../LanguageSwitcher";
+
 function Nav() {
   const { onOpen } = useSidebarDrawer();
+  const { t } = useTranslation();
 
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
+
+  console.log(navigator.language);
 
   return (
     <Flex color="gray.100">
@@ -30,7 +36,7 @@ function Nav() {
                 textDecoration: "underline",
               }}
             >
-              Home
+              {t("header.home")}
             </Text>
           </Link>
           <Link to="about-me" smooth={true}>
@@ -40,7 +46,7 @@ function Nav() {
                 textDecoration: "underline",
               }}
             >
-              Sobre mim
+              {t("header.aboutMe")}
             </Text>
           </Link>
           <Link to="exp" smooth={true}>
@@ -50,7 +56,7 @@ function Nav() {
                 textDecoration: "underline",
               }}
             >
-              Experiência
+              {t("header.experience")}
             </Text>
           </Link>
           <Link to="projects" smooth={true}>
@@ -60,9 +66,10 @@ function Nav() {
                 textDecoration: "underline",
               }}
             >
-              Projetos
+              {t("header.projects")}
             </Text>
           </Link>
+          <LanguageSwitcher />
         </HStack>
       ) : (
         <>

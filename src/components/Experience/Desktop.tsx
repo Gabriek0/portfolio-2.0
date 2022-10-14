@@ -1,8 +1,6 @@
 import {
   Box,
   Flex,
-  ScaleFade,
-  Slide,
   Tab,
   TabPanel,
   TabPanels,
@@ -10,12 +8,16 @@ import {
   Text,
 } from "@chakra-ui/react";
 
+import { useTranslation } from "react-i18next";
+
 function ExperienceDesktop() {
+  const { t } = useTranslation();
+
   return (
     <Tabs display="flex" width="100%" variant="unstyled" gap={36}>
       <Flex flexDir="column">
         <Text mb={8} fontSize="2xl" fontWeight="600" color="white">
-          EXPERIÊNCIA
+          {t("experience.title")}
         </Text>
         <Tab
           w={48}
@@ -53,10 +55,11 @@ function ExperienceDesktop() {
           <Box>
             <Flex color="white" justify="space-between" align="center" mb={6}>
               <Text fontSize="xl" fontWeight="500">
-                Desenvolvedor Front End
+                {t("experience.youDevelop.title")}
               </Text>
               <Text fontSize="sm" fontWeight="500">
-                Abr 2022 - Atual
+                {t("experience.youDevelop.date.apr")} 2022 -{" "}
+                {t("experience.youDevelop.date.currently")}
               </Text>
             </Flex>
             <Text color="blue.100" mb={6} fontWeight="700">
@@ -64,11 +67,7 @@ function ExperienceDesktop() {
             </Text>
 
             <Text color="gray.100" fontWeight="500" textAlign="justify">
-              Desenvolvimento Web Front-End utilizando tecnologias, como:
-              React.js, Next.js, Typescript, Styled-components, juntamente coma
-              integração com o Firebase e S3 da AWS para armazenamento de dados
-              e arquivos. Também, tive contato com metodologias agéis, como o
-              Scrum, e o consumo de API's no Front End.
+              {t("experience.youDevelop.text")}
             </Text>
           </Box>
         </TabPanel>
@@ -76,10 +75,11 @@ function ExperienceDesktop() {
           <Box>
             <Flex color="white" justify="space-between" align="center" mb={6}>
               <Text fontSize="xl" fontWeight="500">
-                Estágio em Desenvolvimento Web
+                {t("experience.localsig.title")}
               </Text>
               <Text fontSize="sm" fontWeight="500">
-                Fev 2022 - Abr 2022
+                {t("experience.localsig.date.feb")} 2022 -{" "}
+                {t("experience.localsig.date.apr")} 2022
               </Text>
             </Flex>
             <Text color="blue.100" mb={6} fontWeight="700">
@@ -87,14 +87,7 @@ function ExperienceDesktop() {
             </Text>
 
             <Text color="gray.100" fontWeight="500" textAlign="justify">
-              No estágio, tive contato com o Desenvolvimento de Sites utilizando
-              Wordpress, juntamente com seus diversos plugins, mais
-              especificamente o Elementor PRO. Ademais, desenvolvi interfaces
-              utilizando o Figma, e a aplicação das interfaces na prática,
-              utilizando Next.js, Typescript e Styled-components. Também, tive
-              contato com o Desenvolvimento Mobile utilizando React Native, no
-              qual desenvolvemos um aplicativo para uma empresa terceirizada
-              realizar vistorias em alguns pontos da cidade.
+              {t("experience.localsig.text")}
             </Text>
           </Box>
         </TabPanel>
