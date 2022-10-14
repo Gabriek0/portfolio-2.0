@@ -7,7 +7,6 @@ import Banner from "./components/Banner";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
-
 import SidebarDrawer from "./components/SidebarDrawer";
 import Footer from "./components/Footer";
 

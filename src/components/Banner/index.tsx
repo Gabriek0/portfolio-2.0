@@ -5,8 +5,18 @@ import { FiLinkedin } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 import { BannerImage } from "../../icons";
 
+import Typewriter from "typewriter-effect";
+
+import { useEffect, useState } from "react";
+
 function Banner() {
   const [isLargerThan1024] = useMediaQuery("(min-width: 1024px)");
+
+  const [isFirstTextShow, setIsFirstTextShow] = useState(false);
+
+  useEffect(() => {
+    console.log(isFirstTextShow);
+  }, [isFirstTextShow]);
 
   return (
     <Flex
@@ -20,10 +30,32 @@ function Banner() {
     >
       <Flex w="1120px" flexDirection="column" height="fit-content">
         <Text color="white" fontWeight="600" fontSize={["lg", "2xl"]}>
-          OLÁ, EU SOU O
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("OLÁ EU SOU O ")
+                .callFunction(() => {
+                  setTimeout(() => {
+                    setIsFirstTextShow(true);
+                  }, 1000);
+                })
+                .start();
+            }}
+          />
         </Text>
-        <Text color="blue.100" fontWeight="600" fontSize={["3xl", "6xl"]}>
-          GABRIEL
+        <Text
+          h={[12, 24]}
+          color="blue.100"
+          fontWeight="600"
+          fontSize={["3xl", "6xl"]}
+        >
+          {isFirstTextShow && (
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("GABRIEL").start();
+              }}
+            />
+          )}
         </Text>
         <Text color="white" fontWeight="600" fontSize={["lg", "2xl"]}>
           DESENVOLVEDOR FRONT-END
