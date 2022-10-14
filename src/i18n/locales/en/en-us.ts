@@ -4,6 +4,9 @@ export default {
   translations: {
     language: "Language",
     header: {
+      mobile: {
+        navigation: "Navigation",
+      },
       home: "Home",
       aboutMe: "About me",
       experience: "Experience",

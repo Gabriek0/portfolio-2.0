@@ -25,7 +25,7 @@ function SidebarDrawer() {
       <DrawerContent p={4} bgColor="gray.200">
         <DrawerCloseButton mt={6} color="white" />
         <DrawerHeader color="white">
-          Navegação
+          {t("header.mobile.navigation")}
           <LanguageSwitcher />
         </DrawerHeader>
         <DrawerBody

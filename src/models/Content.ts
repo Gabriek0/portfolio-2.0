@@ -1,6 +1,9 @@
 export interface TranslationContent {
   language: string;
   header: {
+    mobile: {
+      navigation: string;
+    };
     home: string;
     aboutMe: string;
     experience: string;
