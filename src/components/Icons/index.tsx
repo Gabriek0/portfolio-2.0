@@ -15,34 +15,41 @@ import { motion } from "framer-motion";
 // Components
 import IconComponent from "./Icon";
 
-function IconSection() {
-  const icons = [
-    {
-      icon: SiJavascript,
-      link: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
-    },
-    {
-      icon: SiTypescript,
-      link: "https://www.typescriptlang.org/",
-    },
-    {
-      icon: AiFillHtml5,
-      link: "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
-    },
-    {
-      icon: SiCss3,
-      link: "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
-    },
-    {
-      icon: DiReact,
-      link: "https://pt-br.reactjs.org/",
-    },
-    {
-      icon: TbBrandNextjs,
-      link: "https://nextjs.org/docs/api-reference/next/image",
-    },
-  ];
+import { IconType } from "react-icons/lib";
 
+export interface IconProps {
+  icon: IconType;
+  link: string;
+}
+
+const icons: IconProps[] = [
+  {
+    icon: SiJavascript,
+    link: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+  },
+  {
+    icon: SiTypescript,
+    link: "https://www.typescriptlang.org/",
+  },
+  {
+    icon: AiFillHtml5,
+    link: "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+  },
+  {
+    icon: SiCss3,
+    link: "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
+  },
+  {
+    icon: DiReact,
+    link: "https://pt-br.reactjs.org/",
+  },
+  {
+    icon: TbBrandNextjs,
+    link: "https://nextjs.org/docs/api-reference/next/image",
+  },
+];
+
+function IconSection() {
   return (
     <HStack
       mt={4}

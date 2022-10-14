@@ -1,14 +1,11 @@
 import { Icon, Link } from "@chakra-ui/react";
 
 // Types
-import { IconType } from "react-icons";
+import { IconProps } from "./index";
 
-type IconComponentProps = {
-  icon: {
-    icon: IconType;
-    link: string;
-  };
-};
+interface IconComponentProps {
+  icon: IconProps;
+}
 
 function IconComponent({ icon }: IconComponentProps) {
   return (
