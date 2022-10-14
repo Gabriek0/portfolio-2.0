@@ -17,12 +17,30 @@ import IconComponent from "./Icon";
 
 function IconSection() {
   const icons = [
-    SiJavascript,
-    SiTypescript,
-    AiFillHtml5,
-    SiCss3,
-    DiReact,
-    TbBrandNextjs,
+    {
+      icon: SiJavascript,
+      link: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    },
+    {
+      icon: SiTypescript,
+      link: "https://www.typescriptlang.org/",
+    },
+    {
+      icon: AiFillHtml5,
+      link: "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+    },
+    {
+      icon: SiCss3,
+      link: "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
+    },
+    {
+      icon: DiReact,
+      link: "https://pt-br.reactjs.org/",
+    },
+    {
+      icon: TbBrandNextjs,
+      link: "https://nextjs.org/docs/api-reference/next/image",
+    },
   ];
 
   return (

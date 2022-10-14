@@ -4,14 +4,17 @@ import { Icon, Link } from "@chakra-ui/react";
 import { IconType } from "react-icons";
 
 type IconComponentProps = {
-  icon: IconType;
+  icon: {
+    icon: IconType;
+    link: string;
+  };
 };
 
 function IconComponent({ icon }: IconComponentProps) {
   return (
-    <Link>
+    <Link href={icon.link} isExternal>
       <Icon
-        as={icon}
+        as={icon.icon}
         height="28px"
         width="28px"
         color="blue.100"
