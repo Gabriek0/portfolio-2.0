@@ -6,6 +6,7 @@ import Project from "./Project";
 
 // Mock Data
 import { projects } from "../../data/data";
+import { useEffect, useState } from "react";
 
 function Projects() {
   return (

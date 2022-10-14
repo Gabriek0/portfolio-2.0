@@ -53,11 +53,12 @@ function ExperienceMobile() {
             </Text>
           </Flex>
 
-          <Text color="gray.100" fontWeight="500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu
-            purus risus. Ut rutrum sollicitudin purus in accumsan. Proin at
-            mattis metus. Nullam sit amet mauris condimentum, volutpat augue in,
-            mattis urna.
+          <Text color="gray.100" fontWeight="500" textAlign="justify">
+            Desenvolvimento Web Front-End utilizando tecnologias, como:
+            React.js, Next.js, Typescript, Styled-components, juntamente coma
+            integração com o Firebase e S3 da AWS para armazenamento de dados e
+            arquivos. Também, tive contato com metodologias agéis, como o Scrum,
+            e o consumo de API's no Front End.
           </Text>
         </TabPanel>
         <TabPanel w="100%">
@@ -74,11 +75,15 @@ function ExperienceMobile() {
             </Text>
           </Flex>
 
-          <Text color="gray.100" fontWeight="500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu
-            purus risus. Ut rutrum sollicitudin purus in accumsan. Proin at
-            mattis metus. Nullam sit amet mauris condimentum, volutpat augue in,
-            mattis urna.
+          <Text color="gray.100" fontWeight="500" textAlign="justify">
+            No estágio, tive contato com o Desenvolvimento de Sites utilizando
+            Wordpress, juntamente com seus diversos plugins, mais
+            especificamente o Elementor PRO. Ademais, desenvolvi interfaces
+            utilizando o Figma, e a aplicação das interfaces na prática,
+            utilizando Next.js, Typescript e Styled-components. Também, tive
+            contato com o Desenvolvimento Mobile utilizando React Native, no
+            qual desenvolvemos um aplicativo para uma empresa terceirizada
+            realizar vistorias em alguns pontos da cidade.
           </Text>
         </TabPanel>
       </TabPanels>
