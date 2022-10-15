@@ -1,7 +1,7 @@
 <h1 align="center">Portfólio Pessoal 👦</h1>
 
 <div align="center">
-<img  src="./public/Lab-ds-image.png" align="center"/>
+<img  src="/public/portfolio-pessoal.gif" align="center"/>
 </div>
 
 ### 💻 Descrição 
