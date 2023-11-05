@@ -40,13 +40,13 @@ export interface TranslationContent {
   };
   projects: {
     title: string;
-    eSports: {
+    "remix-expenses": {
       description: string;
     };
-    upfi: {
+    "ignite-call": {
       description: string;
     };
-    dashgo: {
+    ignews: {
       description: string;
     };
     worldTrip: {

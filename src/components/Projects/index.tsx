@@ -7,8 +7,8 @@ import Project from "./Project";
 import { v4 as uuid } from "uuid";
 import { Projects as ProjectsData } from "../../types/Projects";
 
-import { useTranslation } from "react-i18next";
 import { useMemo } from "react";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
   const { t } = useTranslation();
@@ -17,42 +17,35 @@ function Projects() {
     return [
       {
         id: uuid(),
-        title: "NLW eSports",
-        description: t("projects.eSports.description"),
-        link: "https://github.com/Gabriek0/nlw-esports-frontend",
-        technologies: [
-          "Javascript",
-          "Typescript",
-          "Tailwind",
-          "Phosphor icons",
-          "Radix",
-          "Vite",
-          "Axios",
-        ],
-        imageUrl: "https://i.ibb.co/xGXxmhL/nlw-esports.png",
+        title: "Remix Expenses",
+        description: t("projects.remix-expenses.description"),
+        link: "https://github.com/Gabriek0/remix-expenses",
+        technologies: ["Remix", "Prisma", "MongoDB", "Typescript"],
+        imageUrl: "/src/assets/Remix Expenses.png",
       },
       {
         id: uuid(),
-        title: "Upfi",
-        description: t("projects.upfi.description"),
-        imageUrl: "https://i.ibb.co/0XP1L8N/upfi.png",
-        link: "https://github.com/Gabriek0/upfi",
+        title: "Ignite Call",
+        description: t("projects.ignite-call.description"),
+        imageUrl: "/src/assets/Ignite Call.png",
+        link: "https://github.com/Gabriek0/ignite-call",
         technologies: [
-          "Javascript",
           "Typescript",
-          "FaunaDB",
-          "React Hook Forms",
+          "Next",
+          "Next SEO",
+          "Next Auth",
           "React Query",
-          "Framer Motion",
-          "Chakra UI",
-          "Axios",
+          "React Query",
+          "React Hook Forms",
+          "Prisma",
+          "Zod",
         ],
       },
       {
         id: uuid(),
-        title: "Dashgo",
-        description: t("projects.dashgo.description"),
-        imageUrl: "https://i.ibb.co/CMySwTX/dashgo.png",
+        title: "Ignews",
+        description: t("projects.ignews.description"),
+        imageUrl: "/src/assets/Ignews.png",
         link: "https://github.com/Gabriek0/dashgo",
         technologies: [
           "ChakraUI",
@@ -68,10 +61,10 @@ function Projects() {
       },
       {
         id: uuid(),
-        title: "World-trip",
+        title: "World Trip",
         description: t("projects.worldTrip.description"),
         link: "https://github.com/Gabriek0/world-trip",
-        imageUrl: "https://i.ibb.co/BwxgW9t/world-trip.png",
+        imageUrl: "/src/assets/WorldTrip.png",
         technologies: [
           "Axios",
           "ChakraUI",

@@ -15,13 +15,13 @@ import {
 import ButtonComponent from "../Button";
 
 // Icons
-import { FiPaperclip } from "react-icons/fi";
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import { FiPaperclip } from "react-icons/fi";
 
 // Types
-import { Projects } from "../../types/Projects";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { Projects } from "../../types/Projects";
 
 import { useTranslation } from "react-i18next";
 
@@ -63,7 +63,7 @@ function Project({ props }: ProjectProps) {
         <>
           <Box position="relative">
             <Image
-              h="200px"
+              h="300px  "
               w="100%"
               cursor="pointer"
               objectFit="cover"

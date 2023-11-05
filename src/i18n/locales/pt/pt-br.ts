@@ -43,19 +43,18 @@ export default {
     },
     projects: {
       title: "PROJETOS",
-      eSports: {
-        description:
-          "Projeto desenvolvido durante a Next Level Week da Rocketseat",
+      "remix-expenses": {
+        description: "Projeto desenvolvido em Remix para controle de despesas",
       },
-      upfi: {
-        description: "Um projeto para listar e adicionar imagens",
+      "ignite-call": {
+        description: "Ignite Call é uma aplicação para agendamento de horários",
+      },
+      ignews: {
+        description: "Uma plataforma para leitores de artigos de blogs",
       },
       worldTrip: {
         description:
           "Uma plataforma de viagens online construído com Chakra UI",
-      },
-      dashgo: {
-        description: "Dashboard interativa utilizando Chakra UI",
       },
       buttonTechnologies: "Tecnologias usadas no projeto",
       buttonView: "Visualizar",

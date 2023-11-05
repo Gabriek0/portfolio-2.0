@@ -43,17 +43,17 @@ export default {
     },
     projects: {
       title: "PROJECTS",
-      eSports: {
-        description: "Project developed during Rocketseat's Next Level Week",
+      "remix-expenses": {
+        description: "Project developed in Remix for expense control",
       },
-      upfi: {
-        description: "A project to list and add images",
+      "ignite-call": {
+        description: "Ignite Call is an application for personal scheduling",
       },
       worldTrip: {
         description: "An online travel platform built with Chakra UI",
       },
-      dashgo: {
-        description: "Interactive Dashboard using Chakra UI",
+      ignews: {
+        description: "Platform for blog article readers",
       },
       buttonTechnologies: "Technologies used in the project",
       buttonView: "View",
