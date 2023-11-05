@@ -75,7 +75,7 @@ function AboutMe() {
             icon={AiOutlineCloudDownload}
             text={t("aboutMe.buttonCv")}
             color="pink"
-            linkTo="/public/Curriculum.pdf"
+            linkTo="/Curriculum.pdf"
             download
           />
           <ButtonComponent
