@@ -6,11 +6,9 @@ import ButtonComponent from "../Button";
 import IconSection from "../Icons";
 
 // React Icons
-import { AiOutlineCloudDownload } from "react-icons/ai";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineCloudDownload, AiOutlineMail } from "react-icons/ai";
 
 // Images
-import Photo from "../../assets/me.png";
 import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
@@ -32,7 +30,11 @@ function AboutMe() {
             once: true,
           }}
         >
-          <Image h="367px" w="367px" src={Photo} />
+          <Image
+            h="367px"
+            w="367px"
+            src="https://media.licdn.com/dms/image/D4D03AQGQlM-IM5ZIhw/profile-displayphoto-shrink_800_800/0/1693020067040?e=1704931200&v=beta&t=oAhbROAltul6w-A-8C3yisQrs9Iktfb65jw0fzYC-n4"
+          />
         </Flex>
       )}
       <Flex
