@@ -21,13 +21,13 @@ function Projects() {
         description: t("projects.remix-expenses.description"),
         link: "https://github.com/Gabriek0/remix-expenses",
         technologies: ["Remix", "Prisma", "MongoDB", "Typescript"],
-        imageUrl: "/src/assets/Remix Expenses.png",
+        imageUrl: "https://i.ibb.co/s3QBSZD/Remix-Expenses.png",
       },
       {
         id: uuid(),
         title: "Ignite Call",
         description: t("projects.ignite-call.description"),
-        imageUrl: "/src/assets/Ignite Call.png",
+        imageUrl: "https://i.ibb.co/09Gm7t6/Ignite-Call.png",
         link: "https://github.com/Gabriek0/ignite-call",
         technologies: [
           "Typescript",
@@ -45,8 +45,8 @@ function Projects() {
         id: uuid(),
         title: "Ignews",
         description: t("projects.ignews.description"),
-        imageUrl: "/src/assets/Ignews.png",
-        link: "https://github.com/Gabriek0/dashgo",
+        imageUrl: "https://i.ibb.co/rwDh3zz/Ignews.png",
+        link: "https://github.com/Gabriek0/ignews",
         technologies: [
           "ChakraUI",
           "Javascript",
@@ -64,7 +64,7 @@ function Projects() {
         title: "World Trip",
         description: t("projects.worldTrip.description"),
         link: "https://github.com/Gabriek0/world-trip",
-        imageUrl: "/src/assets/WorldTrip.png",
+        imageUrl: "https://i.ibb.co/sHqrQC7/World-Trip.png",
         technologies: [
           "Axios",
           "ChakraUI",
