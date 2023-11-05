@@ -37,7 +37,7 @@ export default {
         text: "Desenvolvimento Web Front-End utilizando tecnologias, como: React.js, Next.js, Typescript, Styled-components, juntamente coma integração com o Firebase e S3 da AWS para armazenamento de dados e arquivos. Também, tive contato com metodologias agéis, como o Scrum, e o consumo de API's no Front End.",
         date: {
           apr: "Abr",
-          currently: "Atual",
+          currently: "Out",
         },
       },
     },

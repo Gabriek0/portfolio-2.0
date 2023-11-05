@@ -59,7 +59,7 @@ function ExperienceDesktop() {
               </Text>
               <Text fontSize="sm" fontWeight="500">
                 {t("experience.youDevelop.date.apr")} 2022 -{" "}
-                {t("experience.youDevelop.date.currently")}
+                {t("experience.youDevelop.date.currently")} 2023
               </Text>
             </Flex>
             <Text color="blue.100" mb={6} fontWeight="700">

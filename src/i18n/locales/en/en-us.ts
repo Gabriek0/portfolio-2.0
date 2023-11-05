@@ -37,7 +37,7 @@ export default {
         text: "Front-End Web Development using technologies, such as: React.js, Next.js, Typescript, Styled-components, along with integration with Firebase and S3 from AWS for data and file storage. Also, I had contact with agile methodologies, like Scrum, and the consumption of API's in the Front End.",
         date: {
           apr: "Apr",
-          currently: "Currently",
+          currently: "Oct",
         },
       },
     },
